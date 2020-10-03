@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Innovate Parking</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+
+  <link href="assets/css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html">Innovate Parking</a></h1>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Open Parking</a></li>
+          <li><a href="#team">Team</a></li>
+           <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a href="smart-parking.html" class="get-started-btn scrollto">Smart Parking</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Finding Open Parking Spots</h1>
+          <h2>Using ML to locate open parking spots. <br/>Smart parking with notifications when parking spots open.</h2>
+          <div class="d-lg-flex">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+<main id="main">
+
+
+ <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>The Project</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              The core of our project is our deep learning model using OpenCV. Our deep learning model is able to identify the difference from 
+              a vacant parking spot, and a filled one. Our model edits the original photo/video so that it shows which spots are open by highlighting them
+              green. Scroll below to see the model in action.
+            </p>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+             Our smart parking system will send a user a notifcation via email of when a parking spot opens in their desired parking spot. This feature 
+             integrates a Radar.io location finder and a database of parking spots. A user can enter their name, email, and parking lot, and when a spot opens 
+             they will be notified. The code for this function is ready, but the feature is more proof of concept becuase we do not have much acces to live footage
+             , however if given this footage, we would easily be able to
+             implement our existing code to get it fully functioning with the feed.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+      
+<!-- ======= Services Section ======= -->
+  <section id="services" class="services section-bg">
+    
+    
+    
+     <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Open Parking Spaces</h2>
+          <p>Here is a camera that is hooked up to our model. Here is our model working on footage from a camera. When we pair with cameras we display the original 
+            feed, and then next to it we can display our segmented image with the open spots highlighted green.
+          </p>
+          <br/>
+          <p>On the left we have the true video, and the right is the live updating open spots</p>
+          <br/>
+          <img src="model-feed/rawFeed.gif" alt="Raw Feed" style="width:500px;height:400px;"> 
+          <img src="model-feed/updatedFeed.gif" alt="Updated Feed" style="width:500px;height:400px;"> 
+          <br/>
+          <br/>
+          <p><i>The model working on a single frame from the video</i></p>
+          <br/>
+          <p>On the left we have the orignal frame, and on the right is the processed frame</p>
+          <br/>
+          <img src="model-feed/rawFrame.png" alt="Single Frame" style="width:500px;height:400px;"> 
+          <img src="model-feed/updatedFrame.png" alt="Single Frame" style="width:500px;height:400px;"> 
+          <br/>
+    
+          
+
+        </div>
+        
+      </div>
+    
+    <!-- End Services Section -->
+    
+<!-- ======= Future Section ======= -->
+    <section id="cta" class="cta">
+    
+    <div class="container" data-aos="zoom-in">
+
+        <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3>The Future</h3>
+            <p>Our Program is built to help communities and we will work with city planners and businesses in order to implement our model with
+            live, real time footage. Once we gain access to more and more footage we will be able to display open parking spots in a number of locations.
+            
+            </p>
+          </div>
+        </div>
+
+      </div>
+      
+    </section><!-- End Cta Section -->
+    
+    
+       <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p></p>Meet our team</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/team/shafin.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Shafin Haque</h4>
+                <span>Fullstack, Model Developer</span>
+                <p>Sophomore in High School</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/team/usuf.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Yousuf Zaman</h4>
+                <span>Frontend</span>
+                <p>Junior in High School</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/henrik.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Henrik Zhang</h4>
+                <span>Frontend</span>
+                <p>Junior in High School</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+    
+    
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">How does the model work?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                <p>
+                  Our model first breaks down the individual parking spots of a parking lot. From here we distinguish filled spots from non filled spots. After 
+                  we are able to recognize the difference, we highlight the open spots in green, editing the oringal photo or video.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">What locations are you currently working in? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p>
+                  Currently, our code only works for parking lots in a large majority of the Bay Area. However, as we progress we will be able to collect more data from other locations and analyze their parking lots.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">What is the use of the app?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  You will be able to find and be notified of open parking spaces in the parking lot you have chosen as soon as they are available. Thus, saving you time and money, because you will not waste gas looking for a spot, and our database only contains free parking spots so you don't have to pay for any pesky parking fees.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+    
+
+<!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Please fill out the form below if you would like to get into contacts with us.</p>
+        </div>
+
+          <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch" class="center">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+    
+    
+    
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+
+  <script src="assets/js/main.js"></script>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCQMxNVgNla1E5ERFoMn_I4m5HO0fU6UaE",
+      authDomain: "innovate-parking.firebaseapp.com",
+      databaseURL: "https://innovate-parking.firebaseio.com",
+      projectId: "innovate-parking",
+      storageBucket: "innovate-parking.appspot.com",
+      messagingSenderId: "526017989645",
+      appId: "1:526017989645:web:7b759036cc975767c99944"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+</body>
+
+</html>
