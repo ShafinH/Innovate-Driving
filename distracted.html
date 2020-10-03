@@ -51,8 +51,8 @@
                         </ul>
                     </li>
                     <li><a href="map.html">The Map</a></li>
-                    <li class="menu-active"><a href="severity.html">Severity</a></li>
-                    <li><a href="distracted.html">Distracted</a></li>
+                    <li><a href=" severity.html">Severity</a></li>
+                    <li class="menu-active"><a href=" distracted.html">Distracted</a></li>
                     <li><a href="visual.html">Visuals</a></li>
                     <li><a href="index.html#contact">Contact Us</a></li>
                 </ul>
@@ -67,7 +67,7 @@
             <div class="container">
 
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2>Predict Severity</h2>
+                    <h2>Classify drivers as</h2>
 
                 </div>
 
@@ -76,27 +76,21 @@
         </section><!-- Breadcrumbs Section -->
 
         <br />
-        <center>
-            <h3>The driver has been classified as distracted and is ___/h3>
-        </center>
 
         <div class="container" class="form">
 
             <form action="#" id="sev">
-                <div class="form-group">
-                    <textarea name="" id="forcedLatitude" cols="30" rows="1" class="form-control"
-                        placeholder="Latitude"></textarea>
-                </div>
-                <div class="form-group">
-                    <textarea name="" id="forcedLongitude" cols="30" rows="1" class="form-control"
-                        placeholder="Longitude"></textarea>
-                </div>
-                <div class="form-group">
-                    <textarea name="" id="forcedWeather" cols="30" rows="1" class="form-control"
-                        placeholder="Date (ex. mm/dd/yy hh:mm AM/PM)"></textarea>
-                </div>
+
+                <input type="file" id="myFile" name="filename" required>
 
                 <div class="text-center"><button type="submit" class="btn success">Submit</button></div>
+                <br />
+
+                <div class="hide">
+                    <center>
+                        <h3>The driver has been classified as distracted and is eating/drinking</h3>
+                    </center>
+                </div>
 
         </div>
 
