@@ -185,5 +185,9 @@
 document.getElementById('sev').addEventListener('submit', predictSev);
 
 function predictSev(e) {
-  e.preventDefault
+  e.preventDefault();
+
+  setTimeout(function () {
+    document.querySelector('.hide').style.display = 'block';
+  }, 500);
 }
