@@ -6,5 +6,4 @@ Using Machine Learning to make the roads safer
 <br/>
 2nd Overall at HeroHacks</b>
 
- 
-Devpost Submission: https://devpost.com/software/innovate-driving-9f4zgp
+Learn More: https://devpost.com/software/innovate-driving-9f4zgp
