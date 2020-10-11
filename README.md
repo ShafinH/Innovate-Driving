@@ -4,6 +4,6 @@ Using Machine Learning to make the roads safer
 <br/>
 <b>2nd Overall at MakeUC
 <br/>
-2nd Overall at HeroHacks</b>
+2nd Overall at MLH 2021 Season HH</b>
 
 Learn More: https://devpost.com/software/innovate-driving-9f4zgp
